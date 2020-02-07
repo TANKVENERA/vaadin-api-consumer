@@ -1,8 +1,5 @@
 package service;
 
-import model.Country;
-import model.FootballMatch;
-
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.QueryParam;

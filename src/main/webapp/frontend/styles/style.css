@@ -1,6 +1,6 @@
 
 .aaa {
-		background-image: url("../../images/field.jpg") !important;
+		background-image: url("../../images/field.jpg");
 		width: 600px;
 		height: 380px;
 	}

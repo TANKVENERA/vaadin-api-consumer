@@ -38,13 +38,13 @@ public class FootballMatch {
     @JsonProperty("match_hometeam_name")
     private String homeTeamName;
     @JsonProperty("match_hometeam_score")
-    private Integer hometeamScore;
+    private String hometeamScore;
     @JsonProperty("match_awayteam_name")
     private String awayteamName;
     @JsonProperty("match_awayteam_id")
     private Integer awayteamId;
     @JsonProperty("match_awayteam_score")
-    private Integer awayteamScore;
+    private String awayteamScore;
     @JsonProperty("match_hometeam_halftime_score")
     private Integer hometeamHalftimeScore;
     @JsonProperty("match_awayteam_halftime_score")
@@ -58,9 +58,9 @@ public class FootballMatch {
     @JsonProperty("match_awayteam_penalty_score")
     private Integer awayteamPenaltyScore;
     @JsonProperty("match_hometeam_ft_score")
-    private Integer hometeamFtScore;
+    private String hometeamFtScore;
     @JsonProperty("match_awayteam_ft_score")
-    private Integer awayteamFtScore;
+    private String awayteamFtScore;
     @JsonProperty("match_hometeam_system")
     private String hometeamSystem;
     @JsonProperty("match_awayteam_system")
@@ -78,13 +78,14 @@ public class FootballMatch {
     @JsonProperty("team_away_badge")
     private String awayBadge;
     @JsonIgnore
-    List<Object> goalscorer;
+    private List<Object> goalscorer;
     @JsonIgnore
-    List<Object> cards;
+    private List<Object> cards;
     @JsonIgnore
-    Object substitutions;
-    @JsonIgnore
-    Object lineup;
+    private Object substitutions;
+
+    private LineUp lineup;
+
     @JsonIgnore
     List<Object> statistics;
 
